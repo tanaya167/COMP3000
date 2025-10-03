@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <id>com.example.helloworld</id>
+    <name>HelloWorld</name>
+    <version>1.0.0</version>
+    
+    <targets>
+        <device id="fenix7" />
+    </targets>
+    
+    <type>application</type>
+    
+    <sourceDir>source</sourceDir>
+    
+    <resourceDir>resources</resourceDir>
+    
+    <mainModule>HelloWorld</mainModule>
+</project>
