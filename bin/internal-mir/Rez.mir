@@ -1,0 +1,1832 @@
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [id_monkey,9,27,36]; @symbol_type<0> = [ResourceId,9,40,50]; ]
+        var id_monkey as ResourceId;
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,10,27,39]; @symbol_type<0> = [ResourceId,10,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 13; @symbol_moduledef = [Layouts,13,11,18]; ]
+    module Layouts {
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 13; ]
+        <init> {
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 14; @symbol_functiondef = [MainLayout,14,17,27]; @symbol_param<0> = [dc,14,28,30]; @symbol_param<0>_type<0> = [Graphics,14,34,42]; @symbol_param<0>_type<1> = [Dc,14,43,45]; @symbol_return<0> = [Array,14,50,55]; @symbol_return<1> = [WatchUi,14,56,63]; @symbol_return<2> = [Drawable,14,64,72]; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_start:
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 15 12 ]
+            [ "c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_start" "c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.1 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 15 16 45 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 15 48 50 ];
+            symbol [ getWidth %tmp.2 15 51 59 ];
+            %tmp.2 = getv function %tmp.1 :getWidth;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 15 16 45 ];
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 17 12 ]
+            [ "c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_start" "c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_stop" ]
+            %rez_cmp_local_text_1193959466.2 = local;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 17 16 45 ];
+            symbol [ WatchUi %tmp.6 17 52 59 ];
+            %tmp.6 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.7 17 60 64 ];
+            %tmp.7 = getv function ? %tmp.6 :Text;
+            %tmp.8 = newd 6;
+            %tmp.10 = const :color;
+            symbol [ color %tmp.10 17 67 72 const ];
+            symbol [ Graphics %tmp.11 17 74 82 ];
+            %tmp.11 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.12 17 83 94 ];
+            %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+            %tmp.13 = dup %tmp.8;
+            %tmp.14 = aputv %tmp.13 %tmp.10 %tmp.12;
+            %tmp.16 = const :locX;
+            symbol [ locX %tmp.16 17 97 101 const ];
+            %tmp.17 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.17 17 104 133 ];
+            %tmp.18 = 0.5;
+            %tmp.19 = mul %tmp.17 %tmp.18;
+            %tmp.20 = dup %tmp.14;
+            %tmp.21 = aputv %tmp.20 %tmp.16 %tmp.19;
+            %tmp.23 = const :locY;
+            symbol [ locY %tmp.23 17 143 147 const ];
+            %tmp.24 = 5;
+            %tmp.25 = dup %tmp.21;
+            %tmp.26 = aputv %tmp.25 %tmp.23 %tmp.24;
+            %tmp.28 = const :text;
+            symbol [ text %tmp.28 17 153 157 const ];
+            symbol [ $ %tmp.29 17 159 160 ];
+            %tmp.29 = getm $;
+            symbol [ Rez %tmp.30 17 161 164 ];
+            %tmp.30 = getv %tmp.29 :Rez;
+            symbol [ Strings %tmp.31 17 165 172 ];
+            %tmp.31 = getv %tmp.30 :Strings;
+            symbol [ prompt %tmp.32 17 173 179 ];
+            %tmp.32 = getv %tmp.31 :prompt;
+            %tmp.33 = dup %tmp.26;
+            %tmp.34 = aputv %tmp.33 %tmp.28 %tmp.32;
+            %tmp.36 = const :justification;
+            symbol [ justification %tmp.36 17 182 195 const ];
+            symbol [ Graphics %tmp.37 17 197 205 ];
+            %tmp.37 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.38 17 206 225 ];
+            %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+            %tmp.39 = dup %tmp.34;
+            %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
+            %tmp.42 = const :font;
+            symbol [ font %tmp.42 17 228 232 const ];
+            symbol [ Graphics %tmp.43 17 234 242 ];
+            %tmp.43 = getm $.Toybox.Graphics;
+            symbol [ FONT_MEDIUM %tmp.44 17 243 254 ];
+            %tmp.44 = getv %tmp.43 :FONT_MEDIUM;
+            %tmp.45 = dup %tmp.40;
+            %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+            %tmp.4 = newc %tmp.7 (%tmp.46);
+            lputv %rez_cmp_local_text_1193959466.2 %tmp.4;
+            symbol [ rez_cmp_local_text_1193959466 %rez_cmp_local_text_1193959466.2 17 16 45 ];
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 19 12 ]
+            [ "c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_start" "c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_stop" ]
+            %rez_cmp_local_bitmap_id_monkey.3 = local;
+            symbol [ rez_cmp_local_bitmap_id_monkey %rez_cmp_local_bitmap_id_monkey.3 19 16 46 ];
+            symbol [ WatchUi %tmp.49 19 53 60 ];
+            %tmp.49 = getm $.Toybox.WatchUi;
+            symbol [ Bitmap %tmp.50 19 61 67 ];
+            %tmp.50 = getv function ? %tmp.49 :Bitmap;
+            %tmp.51 = newd 4;
+            %tmp.53 = const :identifier;
+            symbol [ identifier %tmp.53 19 70 80 const ];
+            %tmp.54 = "id_monkey";
+            %tmp.55 = dup %tmp.51;
+            %tmp.56 = aputv %tmp.55 %tmp.53 %tmp.54;
+            %tmp.58 = const :rezId;
+            symbol [ rezId %tmp.58 19 96 101 const ];
+            symbol [ $ %tmp.59 19 103 104 ];
+            %tmp.59 = getm $;
+            symbol [ Rez %tmp.60 19 105 108 ];
+            %tmp.60 = getv %tmp.59 :Rez;
+            symbol [ Drawables %tmp.61 19 109 118 ];
+            %tmp.61 = getv %tmp.60 :Drawables;
+            symbol [ id_monkey %tmp.62 19 119 128 ];
+            %tmp.62 = getv %tmp.61 :id_monkey;
+            %tmp.63 = dup %tmp.56;
+            %tmp.64 = aputv %tmp.63 %tmp.58 %tmp.62;
+            %tmp.66 = const :locX;
+            symbol [ locX %tmp.66 19 131 135 const ];
+            symbol [ WatchUi %tmp.67 19 137 144 ];
+            %tmp.67 = getm $.Toybox.WatchUi;
+            symbol [ LAYOUT_HALIGN_CENTER %tmp.68 19 145 165 ];
+            %tmp.68 = getv %tmp.67 :LAYOUT_HALIGN_CENTER;
+            %tmp.69 = dup %tmp.64;
+            %tmp.70 = aputv %tmp.69 %tmp.66 %tmp.68;
+            %tmp.72 = const :locY;
+            symbol [ locY %tmp.72 19 168 172 const ];
+            %tmp.73 = 30;
+            %tmp.74 = dup %tmp.70;
+            %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
+            %tmp.47 = newc %tmp.50 (%tmp.75);
+            lputv %rez_cmp_local_bitmap_id_monkey.3 %tmp.47;
+            symbol [ rez_cmp_local_bitmap_id_monkey %rez_cmp_local_bitmap_id_monkey.3 19 16 46 ];
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 20 12 ]
+            %tmp.76 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.76 20 12 42 ];
+            symbol [ setLocation %tmp.77 20 43 54 ];
+            %tmp.77 = getv function %tmp.76 :setLocation;
+            %tmp.78 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.78 20 57 86 ];
+            %tmp.79 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.79 20 89 119 ];
+            symbol [ width %tmp.80 20 120 125 ];
+            %tmp.80 = getv %tmp.79 :width;
+            %tmp.81 = sub %tmp.78 %tmp.80;
+            %tmp.82 = 0.5;
+            %tmp.83 = mul %tmp.81 %tmp.82;
+            %tmp.84 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.84 20 135 165 ];
+            symbol [ locY %tmp.85 20 166 170 ];
+            %tmp.85 = getv %tmp.84 :locY;
+            invoke %tmp.76 %tmp.77(%tmp.83, %tmp.85);
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 22 12 ]
+            %tmp.86 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.86 22 86 91 ];
+            symbol [ WatchUi %tmp.86 22 92 99 ];
+            symbol [ Drawable %tmp.86 22 100 108 ];
+            %tmp.87 = lgetv %rez_cmp_local_text_1193959466.2;
+            symbol [ rez_cmp_local_text_1193959466 %tmp.87 22 20 49 ];
+            %tmp.88 = dup %tmp.86;
+            %tmp.89 = aputv %tmp.88 0 %tmp.87;
+            %tmp.90 = lgetv %rez_cmp_local_bitmap_id_monkey.3;
+            symbol [ rez_cmp_local_bitmap_id_monkey %tmp.90 22 51 81 ];
+            %tmp.91 = dup %tmp.89;
+            %tmp.92 = aputv %tmp.91 1 %tmp.90;
+            ret %tmp.92;
+c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_14_74_23_8_stop:
+        }
+    }
+    [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 26; @symbol_moduledef = [Menus,26,11,16]; ]
+    module Menus {
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 26; ]
+        <init> {
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 27; @symbol_classdef = [MainMenu,27,14,22]; @symbol_extends<0> = [WatchUi,27,31,38]; @symbol_extends<1> = [Menu,27,39,43]; ]
+        class MainMenu extends WatchUi.Menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 27; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 27; ]
+            static
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 28; @symbol_functiondef = [initialize,28,21,31]; ]
+            function initialize() as Void {
+c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_28_34_32_12_start:
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 29 16 ]
+                symbol [ Menu %tmp.2 29 16 20 ];
+                %tmp.2 = getv ? :Menu;
+                symbol [ initialize %tmp.3 29 21 31 ];
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 30 16 ]
+                %tmp.4 = self;
+                symbol [ addItem %tmp.5 30 16 23 ];
+                %tmp.5 = getv function %tmp.4 :addItem;
+                symbol [ WatchUi %tmp.6 30 25 32 ];
+                %tmp.6 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.7 30 33 45 ];
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                symbol [ $ %tmp.8 30 46 47 ];
+                %tmp.8 = getm $;
+                symbol [ Rez %tmp.9 30 48 51 ];
+                %tmp.9 = getv %tmp.8 :Rez;
+                symbol [ Strings %tmp.10 30 52 59 ];
+                %tmp.10 = getv %tmp.9 :Strings;
+                symbol [ menu_label_1 %tmp.11 30 60 72 ];
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                symbol [ String %tmp.13 30 77 83 ];
+                %tmp.15 = const :item_1;
+                symbol [ item_1 %tmp.15 30 87 93 const ];
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 31 16 ]
+                %tmp.16 = self;
+                symbol [ addItem %tmp.17 31 16 23 ];
+                %tmp.17 = getv function %tmp.16 :addItem;
+                symbol [ WatchUi %tmp.18 31 25 32 ];
+                %tmp.18 = getm $.Toybox.WatchUi;
+                symbol [ loadResource %tmp.19 31 33 45 ];
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                symbol [ $ %tmp.20 31 46 47 ];
+                %tmp.20 = getm $;
+                symbol [ Rez %tmp.21 31 48 51 ];
+                %tmp.21 = getv %tmp.20 :Rez;
+                symbol [ Strings %tmp.22 31 52 59 ];
+                %tmp.22 = getv %tmp.21 :Strings;
+                symbol [ menu_label_2 %tmp.23 31 60 72 ];
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                symbol [ String %tmp.25 31 77 83 ];
+                %tmp.27 = const :item_2;
+                symbol [ item_2 %tmp.27 31 87 93 const ];
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+c__GarminProjects_COMP3000_bin_gen_006_B4261_00_source_Rez_mcgen_28_34_32_12_stop:
+            }
+        }
+    }
+    [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 36; @symbol_moduledef = [Strings,36,11,18]; ]
+    module Strings {
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 36; ]
+        <init> {
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; @symbol_vardef = [menu_label_1,37,27,39]; @symbol_type<0> = [ResourceId,37,43,53]; ]
+        var menu_label_1 as ResourceId;
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; @symbol_vardef = [menu_label_2,38,27,39]; @symbol_type<0> = [ResourceId,38,43,53]; ]
+        var menu_label_2 as ResourceId;
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; @symbol_vardef = [prompt,39,27,33]; @symbol_type<0> = [ResourceId,39,37,47]; ]
+        var prompt as ResourceId;
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; @symbol_vardef = [AppName,40,27,34]; @symbol_type<0> = [ResourceId,40,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 43; @symbol_moduledef = [Styles,43,11,17]; ]
+    module Styles {
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 43; ]
+        <init> {
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 44; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,44,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 44; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 45 18 ]
+                symbol [ Graphics %tmp.28 45 34 42 ];
+                %tmp.28 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.29 45 43 62 ];
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.29;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 46 18 ]
+                symbol [ Graphics %tmp.30 46 25 33 ];
+                %tmp.30 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.31 46 34 44 ];
+                %tmp.31 = getv %tmp.30 :FONT_SMALL;
+                putv self :font %tmp.31;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 45; @position = 18; @symbol_constdef = [justification,45,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 46; @position = 18; @symbol_constdef = [font,46,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 49; @symbol_moduledef = [system_size__menu_header,49,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 49; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [width,50,18,23]; @symbol_type<0> = [Number,50,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 51; @position = 18; @symbol_constdef = [height,51,18,24]; @symbol_type<0> = [Number,51,28,34]; ]
+            const height as Number = 90;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 54; @symbol_moduledef = [system_loc__hint_button_left_bottom,54,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 54; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [exclude,55,18,25]; @symbol_type<0> = [Boolean,55,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 58; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,58,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 58; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 59 18 ]
+                symbol [ Graphics %tmp.32 59 34 42 ];
+                %tmp.32 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.33 59 43 62 ];
+                %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.34 59 63 71 ];
+                %tmp.34 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.35 59 72 92 ];
+                %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_VCENTER;
+                %tmp.36 = bitor %tmp.33 %tmp.35;
+                putv self :justification %tmp.36;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 60 18 ]
+                symbol [ Graphics %tmp.37 60 25 33 ];
+                %tmp.37 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.38 60 34 44 ];
+                %tmp.38 = getv %tmp.37 :FONT_SMALL;
+                putv self :font %tmp.38;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 59; @position = 18; @symbol_constdef = [justification,59,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 60; @position = 18; @symbol_constdef = [font,60,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 63; @symbol_moduledef = [prompt_loc__body_no_title,63,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 63; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [x,64,18,19]; @symbol_type<0> = [Number,64,23,29]; ]
+            const x as Number = 39;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 65; @position = 18; @symbol_constdef = [y,65,18,19]; @symbol_type<0> = [Number,65,23,29]; ]
+            const y as Number = 58;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 68; @symbol_moduledef = [system_icon_dark__about,68,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 68; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [filename,69,18,26]; @symbol_type<0> = [String,69,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__about.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 70; @position = 18; @symbol_constdef = [compress,70,18,26]; @symbol_type<0> = [String,70,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 71; @position = 18; @symbol_constdef = [dithering,71,18,27]; @symbol_type<0> = [String,71,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [automaticPalette,72,18,34]; @symbol_type<0> = [String,72,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [packingFormat,73,18,31]; @symbol_type<0> = [String,73,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 76; @symbol_moduledef = [system_icon_light__question,76,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [filename,77,18,26]; @symbol_type<0> = [String,77,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__question.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [compress,78,18,26]; @symbol_type<0> = [String,78,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 79; @position = 18; @symbol_constdef = [dithering,79,18,27]; @symbol_type<0> = [String,79,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [automaticPalette,80,18,34]; @symbol_type<0> = [String,80,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 81; @position = 18; @symbol_constdef = [packingFormat,81,18,31]; @symbol_type<0> = [String,81,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 84; @symbol_moduledef = [system_loc__hint_button_left_top,84,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 84; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [exclude,85,18,25]; @symbol_type<0> = [Boolean,85,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 88; @symbol_moduledef = [prompt_font__title,88,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 88; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 89 18 ]
+                symbol [ Graphics %tmp.39 89 34 42 ];
+                %tmp.39 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.40 89 43 62 ];
+                %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.41 89 63 71 ];
+                %tmp.41 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.42 89 72 92 ];
+                %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_VCENTER;
+                %tmp.43 = bitor %tmp.40 %tmp.42;
+                putv self :justification %tmp.43;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 90 18 ]
+                symbol [ Graphics %tmp.44 90 25 33 ];
+                %tmp.44 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.45 90 34 44 ];
+                %tmp.45 = getv %tmp.44 :FONT_XTINY;
+                putv self :font %tmp.45;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [justification,89,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [font,90,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 93; @symbol_moduledef = [system_icon_dark__discard,93,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 93; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [filename,94,18,26]; @symbol_type<0> = [String,94,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__discard.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [compress,95,18,26]; @symbol_type<0> = [String,95,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [dithering,96,18,27]; @symbol_type<0> = [String,96,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [automaticPalette,97,18,34]; @symbol_type<0> = [String,97,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [packingFormat,98,18,31]; @symbol_type<0> = [String,98,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 101; @symbol_moduledef = [system_size__menu_item,101,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [width,102,18,23]; @symbol_type<0> = [Number,102,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [height,103,18,24]; @symbol_type<0> = [Number,103,28,34]; ]
+            const height as Number = 100;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 106; @symbol_moduledef = [system_color_dark__text,106,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 106; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 108 18 ]
+                symbol [ Graphics %tmp.46 108 31 39 ];
+                %tmp.46 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.47 108 40 57 ];
+                %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+                putv self :background %tmp.47;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [color,107,18,23]; @symbol_type<0> = [Number,107,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [background,108,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 111; @symbol_moduledef = [system_icon_destructive__discard,111,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [filename,112,18,26]; @symbol_type<0> = [String,112,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_destructive__discard.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [dithering,113,18,27]; @symbol_type<0> = [String,113,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [packingFormat,114,18,31]; @symbol_type<0> = [String,114,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 117; @symbol_moduledef = [system_icon_dark__hint_action_menu,117,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 117; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [filename,118,18,26]; @symbol_type<0> = [String,118,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__hint_action_menu.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [dithering,119,18,27]; @symbol_type<0> = [String,119,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [packingFormat,120,18,31]; @symbol_type<0> = [String,120,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 123; @symbol_moduledef = [prompt_size__title,123,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 123; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [width,124,18,23]; @symbol_type<0> = [Number,124,27,33]; ]
+            const width as Number = 165;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 125; @position = 18; @symbol_constdef = [height,125,18,24]; @symbol_type<0> = [Number,125,28,34]; ]
+            const height as Number = 70;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 128; @symbol_moduledef = [confirmation_font__body,128,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 128; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 129 18 ]
+                symbol [ Graphics %tmp.48 129 34 42 ];
+                %tmp.48 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.49 129 43 62 ];
+                %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.50 129 63 71 ];
+                %tmp.50 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.51 129 72 92 ];
+                %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_VCENTER;
+                %tmp.52 = bitor %tmp.49 %tmp.51;
+                putv self :justification %tmp.52;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 130 18 ]
+                symbol [ Graphics %tmp.53 130 25 33 ];
+                %tmp.53 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.54 130 34 43 ];
+                %tmp.54 = getv %tmp.53 :FONT_TINY;
+                putv self :font %tmp.54;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [justification,129,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [font,130,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 133; @symbol_moduledef = [system_color_dark__background,133,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 133; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 134; @position = 18; @symbol_constdef = [color,134,18,23]; @symbol_type<0> = [Number,134,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [background,135,18,28]; @symbol_type<0> = [Number,135,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 138; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,138,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 139; @position = 18; @symbol_constdef = [exclude,139,18,25]; @symbol_type<0> = [Boolean,139,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 142; @symbol_moduledef = [system_size__launch_icon,142,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 142; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [scaleX,143,18,24]; @symbol_type<0> = [Number,143,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 144; @position = 18; @symbol_constdef = [scaleY,144,18,24]; @symbol_type<0> = [Number,144,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [scaleRelativeTo,145,18,33]; @symbol_type<0> = [String,145,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 148; @symbol_moduledef = [confirmation_input__confirm,148,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 148; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [y1,149,18,20]; @symbol_type<0> = [Number,149,24,30]; ]
+            const y1 as Number = 297;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [x1,150,18,20]; @symbol_type<0> = [Number,150,24,30]; ]
+            const x1 as Number = 72;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [y2,151,18,20]; @symbol_type<0> = [Number,151,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 152; @position = 18; @symbol_constdef = [x2,152,18,20]; @symbol_type<0> = [Number,152,24,30]; ]
+            const x2 as Number = 318;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 155; @symbol_moduledef = [prompt_font__body_with_title,155,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 155; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 156 18 ]
+                symbol [ Graphics %tmp.55 156 34 42 ];
+                %tmp.55 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.56 156 43 62 ];
+                %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.56;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 157 18 ]
+                symbol [ Graphics %tmp.57 157 25 33 ];
+                %tmp.57 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.58 157 34 43 ];
+                %tmp.58 = getv %tmp.57 :FONT_TINY;
+                putv self :font %tmp.58;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [justification,156,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [font,157,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 160; @symbol_moduledef = [confirmation_loc__body,160,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 160; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [x,161,18,19]; @symbol_type<0> = [Number,161,23,29]; ]
+            const x as Number = 80;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [y,162,18,19]; @symbol_type<0> = [Number,162,23,29]; ]
+            const y as Number = 78;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 165; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,165,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 165; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [exclude,166,18,25]; @symbol_type<0> = [Boolean,166,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 169; @symbol_moduledef = [prompt_color_dark__background,169,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [color,170,18,23]; @symbol_type<0> = [Number,170,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [background,171,18,28]; @symbol_type<0> = [Number,171,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 174; @symbol_moduledef = [system_icon_destructive__hint_action_menu,174,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [filename,175,18,26]; @symbol_type<0> = [String,175,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_destructive__hint_action_menu.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [dithering,176,18,27]; @symbol_type<0> = [String,176,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 177; @position = 18; @symbol_constdef = [packingFormat,177,18,31]; @symbol_type<0> = [String,177,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 180; @symbol_moduledef = [system_loc__hint_action_menu,180,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 180; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 181; @position = 18; @symbol_constdef = [x,181,18,19]; @symbol_type<0> = [Number,181,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 182; @position = 18; @symbol_constdef = [horizontalJustification,182,18,41]; @symbol_type<0> = [String,182,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 183; @position = 18; @symbol_constdef = [y,183,18,19]; @symbol_type<0> = [Number,183,23,29]; ]
+            const y as Number = 318;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 186; @symbol_moduledef = [confirmation_icon__hint_confirm,186,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 186; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 187; @position = 18; @symbol_constdef = [filename,187,18,26]; @symbol_type<0> = [String,187,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 188; @position = 18; @symbol_constdef = [dithering,188,18,27]; @symbol_type<0> = [String,188,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [packingFormat,189,18,31]; @symbol_type<0> = [String,189,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 192; @symbol_moduledef = [system_loc__hint_button_left_middle,192,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [exclude,193,18,25]; @symbol_type<0> = [Boolean,193,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 196; @symbol_moduledef = [prompt_size__body_no_title,196,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 196; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [width,197,18,23]; @symbol_type<0> = [Number,197,27,33]; ]
+            const width as Number = 312;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 198; @position = 18; @symbol_constdef = [height,198,18,24]; @symbol_type<0> = [Number,198,28,34]; ]
+            const height as Number = 253;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 201; @symbol_moduledef = [system_icon_light__hint_button_left_top,201,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [exclude,202,18,25]; @symbol_type<0> = [Boolean,202,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 205; @symbol_moduledef = [prompt_color_light__background,205,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 205; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [color,206,18,23]; @symbol_type<0> = [Number,206,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [background,207,18,28]; @symbol_type<0> = [Number,207,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 210; @symbol_moduledef = [confirmation_input__delete,210,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 210; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 211 18 ]
+                symbol [ WatchUi %tmp.59 211 27 34 ];
+                %tmp.59 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.60 211 35 44 ];
+                %tmp.60 = getv %tmp.59 :KEY_ENTER;
+                putv self :button %tmp.60;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [button,211,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 214; @symbol_moduledef = [system_icon_dark__hint_button_left_top,214,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 214; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 215; @position = 18; @symbol_constdef = [exclude,215,18,25]; @symbol_type<0> = [Boolean,215,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 218; @symbol_moduledef = [system_input__action_menu,218,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 218; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [y1,219,18,20]; @symbol_type<0> = [Number,219,24,30]; ]
+            const y1 as Number = 318;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 220; @position = 18; @symbol_constdef = [x1,220,18,20]; @symbol_type<0> = [Number,220,24,30]; ]
+            const x1 as Number = 97;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [y2,221,18,20]; @symbol_type<0> = [Number,221,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [x2,222,18,20]; @symbol_type<0> = [Number,222,24,30]; ]
+            const x2 as Number = 293;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 225; @symbol_moduledef = [system_icon_light__save,225,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [filename,226,18,26]; @symbol_type<0> = [String,226,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__save.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [compress,227,18,26]; @symbol_type<0> = [String,227,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [dithering,228,18,27]; @symbol_type<0> = [String,228,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [automaticPalette,229,18,34]; @symbol_type<0> = [String,229,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [packingFormat,230,18,31]; @symbol_type<0> = [String,230,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 233; @symbol_moduledef = [prompt_color_light__body,233,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 233; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 235 18 ]
+                symbol [ Graphics %tmp.61 235 31 39 ];
+                %tmp.61 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.62 235 40 57 ];
+                %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+                putv self :background %tmp.62;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [color,234,18,23]; @symbol_type<0> = [Number,234,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [background,235,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 238; @symbol_moduledef = [system_loc__subwindow,238,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [exclude,239,18,25]; @symbol_type<0> = [Boolean,239,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 242; @symbol_moduledef = [system_icon_light__warning,242,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 243; @position = 18; @symbol_constdef = [filename,243,18,26]; @symbol_type<0> = [String,243,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__warning.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [compress,244,18,26]; @symbol_type<0> = [String,244,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [dithering,245,18,27]; @symbol_type<0> = [String,245,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [automaticPalette,246,18,34]; @symbol_type<0> = [String,246,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [packingFormat,247,18,31]; @symbol_type<0> = [String,247,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 250; @symbol_moduledef = [confirmation_color_light__body,250,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 250; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 252 18 ]
+                symbol [ Graphics %tmp.63 252 31 39 ];
+                %tmp.63 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.64 252 40 57 ];
+                %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
+                putv self :background %tmp.64;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 251; @position = 18; @symbol_constdef = [color,251,18,23]; @symbol_type<0> = [Number,251,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 252; @position = 18; @symbol_constdef = [background,252,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 255; @symbol_moduledef = [confirmation_icon_light__hint_keep,255,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 256; @position = 18; @symbol_constdef = [filename,256,18,26]; @symbol_type<0> = [String,256,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [dithering,257,18,27]; @symbol_type<0> = [String,257,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [packingFormat,258,18,31]; @symbol_type<0> = [String,258,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 261; @symbol_moduledef = [activity_color_light__background,261,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 261; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [color,262,18,23]; @symbol_type<0> = [Number,262,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 263; @position = 18; @symbol_constdef = [background,263,18,28]; @symbol_type<0> = [Number,263,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 266; @symbol_moduledef = [system_icon_positive__hint_button_right_top,266,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 266; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [filename,267,18,26]; @symbol_type<0> = [String,267,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 268; @position = 18; @symbol_constdef = [dithering,268,18,27]; @symbol_type<0> = [String,268,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 271; @symbol_moduledef = [system_size__screen,271,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 271; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 272; @position = 18; @symbol_constdef = [width,272,18,23]; @symbol_type<0> = [Number,272,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 273; @position = 18; @symbol_constdef = [height,273,18,24]; @symbol_type<0> = [Number,273,28,34]; ]
+            const height as Number = 390;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 276; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,276,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 276; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [filename,277,18,26]; @symbol_type<0> = [String,277,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [dithering,278,18,27]; @symbol_type<0> = [String,278,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 281; @symbol_moduledef = [system_color_light__background,281,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 281; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 282; @position = 18; @symbol_constdef = [color,282,18,23]; @symbol_type<0> = [Number,282,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 283; @position = 18; @symbol_constdef = [background,283,18,28]; @symbol_type<0> = [Number,283,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 286; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,286,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 286; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 287; @position = 18; @symbol_constdef = [filename,287,18,26]; @symbol_type<0> = [String,287,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [dithering,288,18,27]; @symbol_type<0> = [String,288,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 291; @symbol_moduledef = [confirmation_loc__hint_confirm,291,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 291; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 292; @position = 18; @symbol_constdef = [x,292,18,19]; @symbol_type<0> = [Number,292,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [horizontalJustification,293,18,41]; @symbol_type<0> = [String,293,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [y,294,18,19]; @symbol_type<0> = [Number,294,23,29]; ]
+            const y as Number = 297;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 297; @symbol_moduledef = [activity_color_dark__text,297,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 297; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 299 18 ]
+                symbol [ Graphics %tmp.65 299 31 39 ];
+                %tmp.65 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.66 299 40 57 ];
+                %tmp.66 = getv %tmp.65 :COLOR_TRANSPARENT;
+                putv self :background %tmp.66;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [color,298,18,23]; @symbol_type<0> = [Number,298,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 299; @position = 18; @symbol_constdef = [background,299,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 302; @symbol_moduledef = [confirmation_input__keep,302,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 302; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 303 18 ]
+                symbol [ WatchUi %tmp.67 303 27 34 ];
+                %tmp.67 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.68 303 35 42 ];
+                %tmp.68 = getv %tmp.67 :KEY_ESC;
+                putv self :button %tmp.68;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [button,303,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 306; @symbol_moduledef = [prompt_loc__body_with_title,306,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [x,307,18,19]; @symbol_type<0> = [Number,307,23,29]; ]
+            const x as Number = 39;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [y,308,18,19]; @symbol_type<0> = [Number,308,23,29]; ]
+            const y as Number = 98;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 311; @symbol_moduledef = [system_icon_dark__search,311,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [filename,312,18,26]; @symbol_type<0> = [String,312,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__search.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [compress,313,18,26]; @symbol_type<0> = [String,313,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [dithering,314,18,27]; @symbol_type<0> = [String,314,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [automaticPalette,315,18,34]; @symbol_type<0> = [String,315,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 316; @position = 18; @symbol_constdef = [packingFormat,316,18,31]; @symbol_type<0> = [String,316,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 319; @symbol_moduledef = [activity_color_light__text,319,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 319; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 321 18 ]
+                symbol [ Graphics %tmp.69 321 31 39 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.70 321 40 57 ];
+                %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
+                putv self :background %tmp.70;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [color,320,18,23]; @symbol_type<0> = [Number,320,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 321; @position = 18; @symbol_constdef = [background,321,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 324; @symbol_moduledef = [confirmation_icon__hint_keep,324,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 324; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [filename,325,18,26]; @symbol_type<0> = [String,325,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [dithering,326,18,27]; @symbol_type<0> = [String,326,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 327; @position = 18; @symbol_constdef = [packingFormat,327,18,31]; @symbol_type<0> = [String,327,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 330; @symbol_moduledef = [system_icon_dark__save,330,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 330; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [filename,331,18,26]; @symbol_type<0> = [String,331,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__save.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 332; @position = 18; @symbol_constdef = [compress,332,18,26]; @symbol_type<0> = [String,332,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 333; @position = 18; @symbol_constdef = [dithering,333,18,27]; @symbol_type<0> = [String,333,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [automaticPalette,334,18,34]; @symbol_type<0> = [String,334,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [packingFormat,335,18,31]; @symbol_type<0> = [String,335,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 338; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,338,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 338; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [exclude,339,18,25]; @symbol_type<0> = [Boolean,339,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 342; @symbol_moduledef = [system_icon_light__search,342,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 342; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [filename,343,18,26]; @symbol_type<0> = [String,343,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__search.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [compress,344,18,26]; @symbol_type<0> = [String,344,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [dithering,345,18,27]; @symbol_type<0> = [String,345,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [automaticPalette,346,18,34]; @symbol_type<0> = [String,346,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [packingFormat,347,18,31]; @symbol_type<0> = [String,347,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 350; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,350,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 350; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 351; @position = 18; @symbol_constdef = [exclude,351,18,25]; @symbol_type<0> = [Boolean,351,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 354; @symbol_moduledef = [system_icon_positive__hint_button_left_top,354,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 354; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [exclude,355,18,25]; @symbol_type<0> = [Boolean,355,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 358; @symbol_moduledef = [system_loc__hint_button_right_bottom,358,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 358; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [x,359,18,19]; @symbol_type<0> = [Number,359,23,29]; ]
+            const x as Number = 304;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 360; @position = 18; @symbol_constdef = [y,360,18,19]; @symbol_type<0> = [Number,360,23,29]; ]
+            const y as Number = 234;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 363; @symbol_moduledef = [confirmation_icon_dark__hint_reject,363,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 363; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [filename,364,18,26]; @symbol_type<0> = [String,364,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 365; @position = 18; @symbol_constdef = [dithering,365,18,27]; @symbol_type<0> = [String,365,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [packingFormat,366,18,31]; @symbol_type<0> = [String,366,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 369; @symbol_moduledef = [confirmation_color_dark__body,369,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 369; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 371 18 ]
+                symbol [ Graphics %tmp.71 371 31 39 ];
+                %tmp.71 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.72 371 40 57 ];
+                %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+                putv self :background %tmp.72;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [color,370,18,23]; @symbol_type<0> = [Number,370,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 371; @position = 18; @symbol_constdef = [background,371,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 374; @symbol_moduledef = [confirmation_icon_light__hint_confirm,374,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 374; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [filename,375,18,26]; @symbol_type<0> = [String,375,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 376; @position = 18; @symbol_constdef = [dithering,376,18,27]; @symbol_type<0> = [String,376,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [packingFormat,377,18,31]; @symbol_type<0> = [String,377,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 380; @symbol_moduledef = [prompt_color_dark__title,380,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 380; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 382 18 ]
+                symbol [ Graphics %tmp.73 382 31 39 ];
+                %tmp.73 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.74 382 40 57 ];
+                %tmp.74 = getv %tmp.73 :COLOR_TRANSPARENT;
+                putv self :background %tmp.74;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 381; @position = 18; @symbol_constdef = [color,381,18,23]; @symbol_type<0> = [Number,381,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [background,382,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 385; @symbol_moduledef = [system_icon_destructive__cancel,385,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 385; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [filename,386,18,26]; @symbol_type<0> = [String,386,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [dithering,387,18,27]; @symbol_type<0> = [String,387,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [packingFormat,388,18,31]; @symbol_type<0> = [String,388,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 391; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,391,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 391; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [filename,392,18,26]; @symbol_type<0> = [String,392,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [dithering,393,18,27]; @symbol_type<0> = [String,393,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 396; @symbol_moduledef = [prompt_loc__title,396,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [x,397,18,19]; @symbol_type<0> = [Number,397,23,29]; ]
+            const x as Number = 113;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [y,398,18,19]; @symbol_type<0> = [Number,398,23,29]; ]
+            const y as Number = 19;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 401; @symbol_moduledef = [confirmation_font_enhanced_readability__body,401,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 401; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 402 18 ]
+                symbol [ Graphics %tmp.75 402 34 42 ];
+                %tmp.75 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.76 402 43 62 ];
+                %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.77 402 63 71 ];
+                %tmp.77 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.78 402 72 92 ];
+                %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_VCENTER;
+                %tmp.79 = bitor %tmp.76 %tmp.78;
+                putv self :justification %tmp.79;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 403 18 ]
+                symbol [ Graphics %tmp.80 403 25 33 ];
+                %tmp.80 = getm $.Toybox.Graphics;
+                symbol [ FONT_SMALL %tmp.81 403 34 44 ];
+                %tmp.81 = getv %tmp.80 :FONT_SMALL;
+                putv self :font %tmp.81;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [justification,402,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [font,403,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 406; @symbol_moduledef = [prompt_color_light__title,406,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 406; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 408 18 ]
+                symbol [ Graphics %tmp.82 408 31 39 ];
+                %tmp.82 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.83 408 40 57 ];
+                %tmp.83 = getv %tmp.82 :COLOR_TRANSPARENT;
+                putv self :background %tmp.83;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 407; @position = 18; @symbol_constdef = [color,407,18,23]; @symbol_type<0> = [Number,407,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 408; @position = 18; @symbol_constdef = [background,408,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 411; @symbol_moduledef = [system_icon_dark__hint_button_right_top,411,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 411; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [filename,412,18,26]; @symbol_type<0> = [String,412,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [dithering,413,18,27]; @symbol_type<0> = [String,413,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 416; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,416,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 416; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [exclude,417,18,25]; @symbol_type<0> = [Boolean,417,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 420; @symbol_moduledef = [confirmation_icon_dark__hint_keep,420,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 421; @position = 18; @symbol_constdef = [filename,421,18,26]; @symbol_type<0> = [String,421,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [dithering,422,18,27]; @symbol_type<0> = [String,422,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [packingFormat,423,18,31]; @symbol_type<0> = [String,423,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 426; @symbol_moduledef = [system_icon_light__cancel,426,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [filename,427,18,26]; @symbol_type<0> = [String,427,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__cancel.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 428; @position = 18; @symbol_constdef = [compress,428,18,26]; @symbol_type<0> = [String,428,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [dithering,429,18,27]; @symbol_type<0> = [String,429,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [automaticPalette,430,18,34]; @symbol_type<0> = [String,430,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [packingFormat,431,18,31]; @symbol_type<0> = [String,431,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 434; @symbol_moduledef = [confirmation_icon_light__hint_reject,434,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 434; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [filename,435,18,26]; @symbol_type<0> = [String,435,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [dithering,436,18,27]; @symbol_type<0> = [String,436,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [packingFormat,437,18,31]; @symbol_type<0> = [String,437,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 440; @symbol_moduledef = [system_icon_light__about,440,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 440; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [filename,441,18,26]; @symbol_type<0> = [String,441,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__about.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [compress,442,18,26]; @symbol_type<0> = [String,442,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 443; @position = 18; @symbol_constdef = [dithering,443,18,27]; @symbol_type<0> = [String,443,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 444; @position = 18; @symbol_constdef = [automaticPalette,444,18,34]; @symbol_type<0> = [String,444,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [packingFormat,445,18,31]; @symbol_type<0> = [String,445,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 448; @symbol_moduledef = [system_size__toast_icon,448,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 448; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [scaleX,449,18,24]; @symbol_type<0> = [Number,449,28,34]; ]
+            const scaleX as Number = 40;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 450; @position = 18; @symbol_constdef = [scaleY,450,18,24]; @symbol_type<0> = [Number,450,28,34]; ]
+            const scaleY as Number = 40;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 451; @position = 18; @symbol_constdef = [scaleRelativeTo,451,18,33]; @symbol_type<0> = [String,451,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 454; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,454,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 454; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [exclude,455,18,25]; @symbol_type<0> = [Boolean,455,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 458; @symbol_moduledef = [confirmation_icon__hint_reject,458,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 458; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [filename,459,18,26]; @symbol_type<0> = [String,459,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [dithering,460,18,27]; @symbol_type<0> = [String,460,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [packingFormat,461,18,31]; @symbol_type<0> = [String,461,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 464; @symbol_moduledef = [system_icon_light__hint_action_menu,464,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 464; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [filename,465,18,26]; @symbol_type<0> = [String,465,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__hint_action_menu.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [dithering,466,18,27]; @symbol_type<0> = [String,466,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [packingFormat,467,18,31]; @symbol_type<0> = [String,467,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 470; @symbol_moduledef = [system_icon_light__hint_button_right_middle,470,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 471; @position = 18; @symbol_constdef = [exclude,471,18,25]; @symbol_type<0> = [Boolean,471,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 474; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,474,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 474; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [exclude,475,18,25]; @symbol_type<0> = [Boolean,475,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 478; @symbol_moduledef = [confirmation_loc__hint_reject,478,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 479; @position = 18; @symbol_constdef = [x,479,18,19]; @symbol_type<0> = [Number,479,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [horizontalJustification,480,18,41]; @symbol_type<0> = [String,480,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [y,481,18,19]; @symbol_type<0> = [Number,481,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 484; @symbol_moduledef = [confirmation_icon_dark__hint_delete,484,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 484; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [filename,485,18,26]; @symbol_type<0> = [String,485,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [dithering,486,18,27]; @symbol_type<0> = [String,486,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [packingFormat,487,18,31]; @symbol_type<0> = [String,487,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 490; @symbol_moduledef = [activity_color_dark__background,490,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 490; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [color,491,18,23]; @symbol_type<0> = [Number,491,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [background,492,18,28]; @symbol_type<0> = [Number,492,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 495; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,495,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 495; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [exclude,496,18,25]; @symbol_type<0> = [Boolean,496,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 499; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,499,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 499; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [exclude,500,18,25]; @symbol_type<0> = [Boolean,500,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 503; @symbol_moduledef = [system_size__menu_icon,503,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 503; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [scaleX,504,18,24]; @symbol_type<0> = [Number,504,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [scaleY,505,18,24]; @symbol_type<0> = [Number,505,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [scaleRelativeTo,506,18,33]; @symbol_type<0> = [String,506,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 509; @symbol_moduledef = [system_icon_destructive__warning,509,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 509; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [filename,510,18,26]; @symbol_type<0> = [String,510,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_destructive__warning.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [dithering,511,18,27]; @symbol_type<0> = [String,511,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [packingFormat,512,18,31]; @symbol_type<0> = [String,512,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 515; @symbol_moduledef = [system_loc__hint_button_right_middle,515,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 515; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [exclude,516,18,25]; @symbol_type<0> = [Boolean,516,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 519; @symbol_moduledef = [system_icon_dark__cancel,519,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [filename,520,18,26]; @symbol_type<0> = [String,520,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__cancel.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [compress,521,18,26]; @symbol_type<0> = [String,521,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [dithering,522,18,27]; @symbol_type<0> = [String,522,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [automaticPalette,523,18,34]; @symbol_type<0> = [String,523,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [packingFormat,524,18,31]; @symbol_type<0> = [String,524,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 527; @symbol_moduledef = [prompt_size__body_with_title,527,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 527; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [width,528,18,23]; @symbol_type<0> = [Number,528,27,33]; ]
+            const width as Number = 312;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [height,529,18,24]; @symbol_type<0> = [Number,529,28,34]; ]
+            const height as Number = 215;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 532; @symbol_moduledef = [system_loc__hint_button_right_top,532,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 532; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [x,533,18,19]; @symbol_type<0> = [Number,533,23,29]; ]
+            const x as Number = 318;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [y,534,18,19]; @symbol_type<0> = [Number,534,23,29]; ]
+            const y as Number = 59;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 537; @symbol_moduledef = [system_color_light__text,537,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 537; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 539 18 ]
+                symbol [ Graphics %tmp.84 539 31 39 ];
+                %tmp.84 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.85 539 40 57 ];
+                %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+                putv self :background %tmp.85;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [color,538,18,23]; @symbol_type<0> = [Number,538,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [background,539,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 542; @symbol_moduledef = [system_icon_light__check,542,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 542; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 543; @position = 18; @symbol_constdef = [filename,543,18,26]; @symbol_type<0> = [String,543,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__check.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 544; @position = 18; @symbol_constdef = [compress,544,18,26]; @symbol_type<0> = [String,544,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [dithering,545,18,27]; @symbol_type<0> = [String,545,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [automaticPalette,546,18,34]; @symbol_type<0> = [String,546,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [packingFormat,547,18,31]; @symbol_type<0> = [String,547,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 550; @symbol_moduledef = [confirmation_input__reject,550,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 550; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [y1,551,18,20]; @symbol_type<0> = [Number,551,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 552; @position = 18; @symbol_constdef = [x1,552,18,20]; @symbol_type<0> = [Number,552,24,30]; ]
+            const x1 as Number = 97;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 553; @position = 18; @symbol_constdef = [y2,553,18,20]; @symbol_type<0> = [Number,553,24,30]; ]
+            const y2 as Number = 76;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [x2,554,18,20]; @symbol_type<0> = [Number,554,24,30]; ]
+            const x2 as Number = 293;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 557; @symbol_moduledef = [system_icon_light__revert,557,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 558; @position = 18; @symbol_constdef = [filename,558,18,26]; @symbol_type<0> = [String,558,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__revert.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [compress,559,18,26]; @symbol_type<0> = [String,559,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [dithering,560,18,27]; @symbol_type<0> = [String,560,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [automaticPalette,561,18,34]; @symbol_type<0> = [String,561,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [packingFormat,562,18,31]; @symbol_type<0> = [String,562,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 565; @symbol_moduledef = [system_size__subwindow,565,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 565; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [exclude,566,18,25]; @symbol_type<0> = [Boolean,566,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 569; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,569,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 569; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [exclude,570,18,25]; @symbol_type<0> = [Boolean,570,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 573; @symbol_moduledef = [system_icon_dark__check,573,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [filename,574,18,26]; @symbol_type<0> = [String,574,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__check.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [compress,575,18,26]; @symbol_type<0> = [String,575,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [dithering,576,18,27]; @symbol_type<0> = [String,576,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [automaticPalette,577,18,34]; @symbol_type<0> = [String,577,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [packingFormat,578,18,31]; @symbol_type<0> = [String,578,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 581; @symbol_moduledef = [confirmation_loc__hint_keep,581,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 581; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [x,582,18,19]; @symbol_type<0> = [Number,582,23,29]; ]
+            const x as Number = 285;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [y,583,18,19]; @symbol_type<0> = [Number,583,23,29]; ]
+            const y as Number = 234;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 586; @symbol_moduledef = [confirmation_loc__hint_delete,586,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 586; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [x,587,18,19]; @symbol_type<0> = [Number,587,23,29]; ]
+            const x as Number = 309;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [y,588,18,19]; @symbol_type<0> = [Number,588,23,29]; ]
+            const y as Number = 47;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 591; @symbol_moduledef = [system_icon_positive__hint_action_menu,591,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 591; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [filename,592,18,26]; @symbol_type<0> = [String,592,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_positive__hint_action_menu.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [dithering,593,18,27]; @symbol_type<0> = [String,593,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [packingFormat,594,18,31]; @symbol_type<0> = [String,594,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,597,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [exclude,598,18,25]; @symbol_type<0> = [Boolean,598,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 601; @symbol_moduledef = [system_icon_light__hint_button_left_middle,601,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 601; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [exclude,602,18,25]; @symbol_type<0> = [Boolean,602,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 605; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,605,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 605; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [filename,606,18,26]; @symbol_type<0> = [String,606,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [dithering,607,18,27]; @symbol_type<0> = [String,607,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 610; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,610,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 610; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [filename,611,18,26]; @symbol_type<0> = [String,611,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [dithering,612,18,27]; @symbol_type<0> = [String,612,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 615; @symbol_moduledef = [system_icon_dark__revert,615,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 615; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [filename,616,18,26]; @symbol_type<0> = [String,616,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__revert.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [compress,617,18,26]; @symbol_type<0> = [String,617,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [dithering,618,18,27]; @symbol_type<0> = [String,618,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [automaticPalette,619,18,34]; @symbol_type<0> = [String,619,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [packingFormat,620,18,31]; @symbol_type<0> = [String,620,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 623; @symbol_moduledef = [confirmation_icon_light__hint_delete,623,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 623; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [filename,624,18,26]; @symbol_type<0> = [String,624,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [dithering,625,18,27]; @symbol_type<0> = [String,625,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [packingFormat,626,18,31]; @symbol_type<0> = [String,626,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 629; @symbol_moduledef = [system_icon_dark__question,629,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 629; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [filename,630,18,26]; @symbol_type<0> = [String,630,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__question.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [compress,631,18,26]; @symbol_type<0> = [String,631,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [dithering,632,18,27]; @symbol_type<0> = [String,632,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [automaticPalette,633,18,34]; @symbol_type<0> = [String,633,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [packingFormat,634,18,31]; @symbol_type<0> = [String,634,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 637; @symbol_moduledef = [system_icon_light__discard,637,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 637; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [filename,638,18,26]; @symbol_type<0> = [String,638,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__discard.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [compress,639,18,26]; @symbol_type<0> = [String,639,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [dithering,640,18,27]; @symbol_type<0> = [String,640,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [automaticPalette,641,18,34]; @symbol_type<0> = [String,641,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [packingFormat,642,18,31]; @symbol_type<0> = [String,642,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 645; @symbol_moduledef = [device_info,645,15,26]; ]
+        module device_info {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 645; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 647 18 ]
+                symbol [ Toybox %tmp.87 647 32 38 ];
+                %tmp.87 = getv ? :Toybox;
+                symbol [ System %tmp.88 647 39 45 ];
+                %tmp.88 = getv %tmp.87 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.89 647 46 64 ];
+                %tmp.89 = getv %tmp.88 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.89;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [screenWidth,646,18,29]; @symbol_type<0> = [Number,646,33,39]; ]
+            const screenWidth as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [screenShape,647,18,29]; ]
+            const screenShape;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [hasNightMode,648,18,30]; @symbol_type<0> = [Boolean,648,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [hasGpu,649,18,24]; @symbol_type<0> = [Boolean,649,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 650; @position = 18; @symbol_constdef = [screenHeight,650,18,30]; @symbol_type<0> = [Number,650,34,40]; ]
+            const screenHeight as Number = 390;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 651; @position = 18; @symbol_constdef = [hasTouchScreen,651,18,32]; @symbol_type<0> = [Boolean,651,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,652,18,44]; @symbol_type<0> = [Boolean,652,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 655; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,655,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 655; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 656; @position = 18; @symbol_constdef = [filename,656,18,26]; @symbol_type<0> = [String,656,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [dithering,657,18,27]; @symbol_type<0> = [String,657,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [packingFormat,658,18,31]; @symbol_type<0> = [String,658,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 661; @symbol_moduledef = [prompt_font__body_no_title,661,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 661; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 662 18 ]
+                symbol [ Graphics %tmp.90 662 34 42 ];
+                %tmp.90 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.91 662 43 62 ];
+                %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.92 662 63 71 ];
+                %tmp.92 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.93 662 72 92 ];
+                %tmp.93 = getv %tmp.92 :TEXT_JUSTIFY_VCENTER;
+                %tmp.94 = bitor %tmp.91 %tmp.93;
+                putv self :justification %tmp.94;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 663 18 ]
+                symbol [ Graphics %tmp.95 663 25 33 ];
+                %tmp.95 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.96 663 34 43 ];
+                %tmp.96 = getv %tmp.95 :FONT_TINY;
+                putv self :font %tmp.96;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [justification,662,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [font,663,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 666; @symbol_moduledef = [prompt_size__title_icon,666,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 666; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [scaleX,667,18,24]; @symbol_type<0> = [Float,667,28,33]; ]
+            const scaleX as Float = 0.12;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [scaleRelativeTo,668,18,33]; @symbol_type<0> = [String,668,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 671; @symbol_moduledef = [system_icon_dark__warning,671,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 671; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 672; @position = 18; @symbol_constdef = [filename,672,18,26]; @symbol_type<0> = [String,672,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_dark__warning.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 673; @position = 18; @symbol_constdef = [compress,673,18,26]; @symbol_type<0> = [String,673,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [dithering,674,18,27]; @symbol_type<0> = [String,674,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [automaticPalette,675,18,34]; @symbol_type<0> = [String,675,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [packingFormat,676,18,31]; @symbol_type<0> = [String,676,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 679; @symbol_moduledef = [prompt_loc__title_icon,679,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 679; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 680; @position = 18; @symbol_constdef = [x,680,18,19]; @symbol_type<0> = [Number,680,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 681; @position = 18; @symbol_constdef = [y,681,18,19]; @symbol_type<0> = [Number,681,23,29]; ]
+            const y as Number = 39;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [horizontalJustification,682,18,41]; @symbol_type<0> = [String,682,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [verticalJustification,683,18,39]; @symbol_type<0> = [String,683,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 686; @symbol_moduledef = [prompt_font_enhanced_readability__title,686,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 686; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 687 18 ]
+                symbol [ Graphics %tmp.97 687 34 42 ];
+                %tmp.97 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.98 687 43 62 ];
+                %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.99 687 63 71 ];
+                %tmp.99 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.100 687 72 92 ];
+                %tmp.100 = getv %tmp.99 :TEXT_JUSTIFY_VCENTER;
+                %tmp.101 = bitor %tmp.98 %tmp.100;
+                putv self :justification %tmp.101;
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 688 18 ]
+                symbol [ Graphics %tmp.102 688 25 33 ];
+                %tmp.102 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.103 688 34 43 ];
+                %tmp.103 = getv %tmp.102 :FONT_TINY;
+                putv self :font %tmp.103;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 687; @position = 18; @symbol_constdef = [justification,687,18,31]; ]
+            const justification;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 688; @position = 18; @symbol_constdef = [font,688,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 691; @symbol_moduledef = [prompt_color_dark__body,691,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 691; ]
+            <init> {
+[ "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen" 693 18 ]
+                symbol [ Graphics %tmp.104 693 31 39 ];
+                %tmp.104 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.105 693 40 57 ];
+                %tmp.105 = getv %tmp.104 :COLOR_TRANSPARENT;
+                putv self :background %tmp.105;
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 692; @position = 18; @symbol_constdef = [color,692,18,23]; @symbol_type<0> = [Number,692,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 693; @position = 18; @symbol_constdef = [background,693,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 696; @symbol_moduledef = [confirmation_icon__hint_delete,696,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 696; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 697; @position = 18; @symbol_constdef = [filename,697,18,26]; @symbol_type<0> = [String,697,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 698; @position = 18; @symbol_constdef = [dithering,698,18,27]; @symbol_type<0> = [String,698,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [packingFormat,699,18,31]; @symbol_type<0> = [String,699,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 702; @symbol_moduledef = [system_icon_light__hint_button_right_top,702,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 702; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 703; @position = 18; @symbol_constdef = [filename,703,18,26]; @symbol_type<0> = [String,703,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 704; @position = 18; @symbol_constdef = [dithering,704,18,27]; @symbol_type<0> = [String,704,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 707; @symbol_moduledef = [confirmation_size__body,707,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 707; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 708; @position = 18; @symbol_constdef = [width,708,18,23]; @symbol_type<0> = [Number,708,27,33]; ]
+            const width as Number = 231;
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 709; @position = 18; @symbol_constdef = [height,709,18,24]; @symbol_type<0> = [Number,709,28,34]; ]
+            const height as Number = 234;
+        }
+        [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 712; @symbol_moduledef = [system_icon_positive__check,712,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 712; ]
+            <init> {
+            }
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 713; @position = 18; @symbol_constdef = [filename,713,18,26]; @symbol_type<0> = [String,713,30,36]; ]
+            const filename as String = "C:\\Users\\tanay\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3s\\system_icon_positive__check.svg";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 714; @position = 18; @symbol_constdef = [dithering,714,18,27]; @symbol_type<0> = [String,714,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 715; @position = 18; @symbol_constdef = [packingFormat,715,18,31]; @symbol_type<0> = [String,715,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "c:\GarminProjects\COMP3000\bin\gen\006-B4261-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}
